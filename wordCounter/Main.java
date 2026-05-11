@@ -7,15 +7,15 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter sentence(s) or paragraph(s): ");
 
-        int counter = 0;
-        String word = sc.nextLine();
+        String input = sc.nextLine().trim();
 
-        for (int i = 0; i < word.length(); i++) {
-            if (word.charAt(i) == ' ') continue;
-            counter++;
+        if (input.isEmpty()) {
+            System.out.println("No input provided.");
+        } else {
+            String[] words = input.split("\\s+");
+            System.out.printf("There are %d words in the text.\n", words.length);
         }
 
-        System.out.printf("There are %d words in the text.\n", counter);
         sc.close();
     }
 }
