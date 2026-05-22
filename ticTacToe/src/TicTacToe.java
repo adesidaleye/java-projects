@@ -1,8 +1,6 @@
-package ticTacToe;
-
 import java.util.*;
 
-public class Main {
+public class TicTacToe {
     static ArrayList<Integer> playerMoves = new ArrayList<>();
     static ArrayList<Integer> computerMoves = new ArrayList<>();
 
